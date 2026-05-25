@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лазерне видалення судин Львів | Лікування куперозу — Dr. Kalynovska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Локальные стили для красивого оформления таблиц, списков и FAQ */
+        .service-hero {
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+                        url('../photos.jpg/5.jpg') center/cover;
+            color: white;
+            padding-top: 80px;
+        }
+        .service-hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 20px;
+            color: white;
+        }
+        .desc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .desc-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .desc-text p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+        .advantages-list {
+            margin-top: 25px;
+        }
+        .advantages-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .advantages-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple-dark);
+            font-weight: bold;
+        }
+        
+        /* Прайс-таблицы */
+        .price-tables-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .price-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-purple);
+            padding-bottom: 10px;
+            color: var(--text-dark);
+        }
+        .price-category-title:first-of-type {
+            margin-top: 0;
+        }
+        .custom-price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .custom-price-table th {
+            text-align: left;
+            padding: 15px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            border-bottom: 2px solid #eee;
+        }
+        .custom-price-table td {
+            padding: 16px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        .custom-price-table td.price-val {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--bg-soft);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+        .cta-box h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .desc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">DR. KALYNOVSKA</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle">Послуги <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laser-epilation.html">Лазерна епіляція</a></li>
+                        <li><a href="dermatology.html">Дерматологія</a></li>
+                        <li><a href="cosmetology.html">Косметологія</a></li>
+                        <li><a href="injections.html">Ін'єкційні процедури</a></li>
+                        <li><a href="botox.html">Ботулінотерапія</a></li>
+                        <li><a href="rf-lifting.html">RF-ліфтинг</a></li>
+                        <li><a href="vessel-removal.html">Видалення судин</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#reviews">Відгуки</a></li>
+                <li><a href="../index.html#contact">Контакти</a></li>
+            </ul>
+
+            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Лазерне видалення судин</h1>
+                <p>Безболісне та безслідне усунення куперозу, судинних зірочок (ангіом) та розширеної капілярної сітки на обличчі за допомогою передових технологій лазерної коагуляції.</p>
+                <div class="hero-btns">
+                    <a href="../index.html#contact" class="btn btn-primary">Записатися на процедуру</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="desc-grid">
+                <div class="desc-text reveal">
+                    <h3>Чиста шкіра та рівний тон без судинних дефектів</h3>
+                    <p>Почервоніння крил носа, виражена судинна сіточка на щоках та поодинокі червоні цятки на обличчі — поширені естетичні проблеми, які практично неможливо замаскувати або вилікувати за допомогою звичайної косметики. Методика лазерного видалення судин базується на принципі селективного фототермолізу.</p>
+                    <p>Лазерний промінь чітко певної довжини хвилі поглинається оксигемоглобіном, що міститься всередині розширеної капіляри. Під впливом тепла стінки судини миттєво злипаються (коагулюють), кровотік у ній припиняється, і з часом вона повністю розсмоктується організмом. Навколишні здорові клітини та епідерміс залишаються абсолютно неушкодженими.</p>
+                    
+                    <ul class="advantages-list">
+                        <li><strong>Для кого підходить:</strong> пацієнтам із симптомами куперозу, розацеа, вираженими телеангіектазіями (капілярними сіточками), а також при наявності точкових ангіом (зірочок) на обличчі.</li>
+                        <li><strong>Миттєвий результат:</strong> дрібні поодинокі судини та зірочки зникають безпосередньо в момент спалаху лазера.</li>
+                        <li><strong>Комфорт та безболісність:</strong> інтегрована система охолодження надійно захищає шкіру від перегріву, зводячи будь-які неприємні відчуття до легкого поколювання.</li>
+                    </ul>
+                </div>
+                <div class="desc-text reveal">
+                    <img src="../photos.jpg/27.jpg" alt="Процедура видалення судин лазером" style="width: 100%; height: 450px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-soft);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Вартість лазерного видалення судин</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="price-tables-container reveal">
+                
+                <div class="price-category-title">Процедури коагуляції судин на обличчі</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Зона обробки / Послуга</th>
+                            <th style="text-align: right;">Ціна за 1 сеанс</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Видалення судинної зірочки / ангіоми (1 шт.) — точкове усунення елемента</td>
+                            <td class="price-val">250 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Ніс повністю (корекція куперозу в області крил та спинки носа)</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Підборіддя</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Щоки (локальна терапія вираженої капілярної сітки)</td>
+                            <td class="price-val">1 200 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Обличчя повністю (комплексна терапія дифузного куперозу)</td>
+                            <td class="price-val">2 200 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Запитання пацієнтів про процедуру</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <h3>Скільки сеансів лазера необхідно для повного видалення судин?</h3>
+                    <p>Для видалення дрібних поодиноких елементів або точкових ангіом часто достатньо всього 1 візиту. Якщо ми працюємо з великим куперозом на щоках або дифузним почервонінням обличчя, може знадобитися курс із 2–4 процедур з інтервалом в 3-4 тижні. Точну кількість сеансів лікар прогнозує на консультації.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Чи залишаються після лазерного спалаху шрами або рубці на шкірі?</h3>
+                    <p>Ні, процедура є повністю нетравматичною для поверхні шкіри. Лазер діє вибірково виключно на пошкоджену судину під епідермісом. Одразу після сеансу виникає тимчасове локальне почервоніння, яке безслідно минає протягом кількох годин або 1 дня.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Як поводитися після процедури видалення судин?</h3>
+                    <p>Протягом перших 14 днів після сеансу необхідно захищати шкіру від ультрафіолету та обов'язково наносити сонцезахисний крем із фактором захисту SPF 50+. Також на 2 тижні суворо забороняється відвідувати басейни, лазні, сауни, приймати гарячі ванни та протирати шкіру спиртовмісними тоніками.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Поверніть шкірі бездоганну свіжість та рівний колір</h2>
+                <p>Запишіться на лазерне видалення судин до дипломованого лікаря. Швидко, безпечно та без реабілітації позбавтеся ознак куперозу та капілярних сіточок.</p>
+                <a href="../index.html#contact" class="btn btn-primary">Записатись на консультацію</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">DR. KALYNOVSKA</div>
+            <p>© 2026 DR. KALYNOVSKA. ВСІ ПРАВА ЗАХИЩЕНІ.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

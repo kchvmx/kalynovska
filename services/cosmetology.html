@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Професійна косметологія Львів | Чистки та пілінги — Dr. Kalynovska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Локальные стили для красивого оформления таблиц, списков и FAQ */
+        .service-hero {
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), 
+                        url('../photos.jpg/17.jpg') center/cover;
+            color: white;
+            padding-top: 80px;
+        }
+        .service-hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 20px;
+            color: white;
+        }
+        .desc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .desc-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .desc-text p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+        .advantages-list {
+            margin-top: 25px;
+        }
+        .advantages-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .advantages-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple-dark);
+            font-weight: bold;
+        }
+        
+        /* Прайс-таблицы */
+        .price-tables-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .price-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-purple);
+            padding-bottom: 10px;
+        }
+        .price-category-title:first-of-type {
+            margin-top: 0;
+        }
+        .custom-price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .custom-price-table th {
+            text-align: left;
+            padding: 15px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            border-bottom: 2px solid #eee;
+        }
+        .custom-price-table td {
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        .custom-price-table td.price-val {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--bg-soft);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+        .cta-box h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .desc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">DR. KALYNOVSKA</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle">Послуги <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laser-epilation.html">Лазерна епіляція</a></li>
+                        <li><a href="dermatology.html">Дерматологія</a></li>
+                        <li><a href="cosmetology.html">Косметологія</a></li>
+                        <li><a href="injections.html">Ін'єкційні процедури</a></li>
+                        <li><a href="botox.html">Ботулінотерапія</a></li>
+                        <li><a href="rf-lifting.html">RF-ліфтинг</a></li>
+                        <li><a href="vessel-removal.html">Видалення судин</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#reviews">Відгуки</a></li>
+                <li><a href="../index.html#contact">Контакти</a></li>
+            </ul>
+
+            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Класична та естетична косметологія</h1>
+                <p>Професійне глибоке очищення, кислотні терапевтичні пілінги та преміальні програми догляду для відновлення здоров'я, гладкості та природного сяйва вашої шкіри.</p>
+                <div class="hero-btns">
+                    <a href="../index.html#contact" class="btn btn-primary">Записатися на прийом</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="desc-grid">
+                <div class="desc-text reveal">
+                    <h3>Фундамент здоров’я та бездоганного вигляду обличчя</h3>
+                    <p>Естетична косметологія в нашій клініці — це науково обґрунтовані процедури, спрямовані на якісне очищення клітин, активне оновлення епідермісу та глибоке живлення шкіри. Ми не просто маскуємо недоліки, а усуваємо причини тьмяності, висипань та гіперкератозу.</p>
+                    <p>Кожна маніпуляція підбирається персонально під ваш тип шкіри та її поточний стан. Використання професійних лінійок космецевтики гарантує високу ефективність у поєднанні з атравматичністю та комфортом під час сеансу.</p>
+                    
+                    <ul class="advantages-list">
+                        <li><strong>Для кого підходить:</strong> ідеально для боротьби з комедонами, розширеними порами, нерівним рельєфом, першими ознаками старіння та слідами стресу.</li>
+                        <li><strong>Медичний стандарт:</strong> суворе дотримання стерильності, протоколів та використання ліцензованих світових брендів.</li>
+                        <li><strong>Комплексна дія:</strong> поєднання механічних та апаратних технік для досягнення стійкого, пролонгованого результату.</li>
+                    </ul>
+                </div>
+                <div class="desc-text reveal">
+                    <img src="../photos.jpg/6.jpg" alt="Косметологічний догляд для обличчя" style="width: 100%; height: 450px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-soft);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Вартість послуг косметології</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="price-tables-container reveal">
+                
+                <div class="price-category-title">Глибоке очищення та чистки</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Назва послуги</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Механічна чистка обличчя</td>
+                            <td class="price-val">1 400 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Ультразвукова чистка обличчя</td>
+                            <td class="price-val">1 300 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Комбінована чистка обличчя</td>
+                            <td class="price-val">1 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Комбінована чистка + пілінг</td>
+                            <td class="price-val">2 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Чистка спини + пілінг</td>
+                            <td class="price-val">2 800 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Професійні терапевтичні пілінги</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Різновид пілінгу</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Азелаїновий пілінг (корекція акне та куперозу)</td>
+                            <td class="price-val">1 200 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Мигдальний пілінг (ексфоліація та сяйво)</td>
+                            <td class="price-val">1 200 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Пілінг Джесснера (глибоке оновлення та рельєф)</td>
+                            <td class="price-val">1 200 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Саліциловий пілінг (себорегуляція та протизапальна дія)</td>
+                            <td class="price-val">1 200 грн</td>
+                        </tr>
+                        <tr>
+                            <td>ТСА пілінг (трихлороцтовий — вирівнювання рубців та омолодження)</td>
+                            <td class="price-val">1 800 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Інтенсивні доглядові програми та ферменти</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Програма догляду</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ферментотерапія (глибоке очищення, лімфодренаж та ліфтинг)</td>
+                            <td class="price-val">1 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Преміальний догляд Casmara (Іспанія — альгінатні маски та експрес-омолодження)</td>
+                            <td class="price-val">2 000 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Часті запитання пацієнтів</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <h3>Чи буде сильне лущення після професійних пілінгів?</h3>
+                    <p>Лущення залежить від обраного виду пілінгу. Поверхневі пілінг-системи (мигдальний, азелаїновий) оновлюють клітини непомітно і практично не викликають лущення. Після серединного ТСА або пілінгу Джесснера можливе дрібнолусочкове злущування шкіри протягом 3-5 днів, що є абсолютно нормою.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Як часто необхідно виконувати комбіновану чистку обличчя?</h3>
+                    <p>Для жирного та комбінованого типу шкіри процедуру рекомендовано повторювати один раз на 1,5–2 місяці. Для нормальної та сухої шкіри достатньо підтримувати чистоту покроковим очищенням один раз на 3 місяці. Точний графік лікар складе після огляду.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Які основні протипоказання до проведення косметологічних доглядів?</h3>
+                    <p>Основними протипоказаннями є наявність герпетичних висипань у гострій фазі, гнійничкові запалення великої площі на обличчі, дерматити у стадії загострення, індивідуальна непереносимість компонентів косметичних засобів та підвищена температура тіла.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Подаруйте своїй шкірі професійну турботу</h2>
+                <p>Запишіться на комбіновану чистку або індивідуальний підбір пілінгу. Лікар проведе діагностику шкіри та підбере ідеальний домашній догляд.</p>
+                <a href="../index.html#contact" class="btn btn-primary">Записатись на консультацію</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">DR. KALYNOVSKA</div>
+            <p>© 2026 DR. KALYNOVSKA. ВСІ ПРАВА ЗАХИЩЕНІ.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
