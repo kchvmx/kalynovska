@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Консультація дерматолога Львів | Видалення новоутворень — Dr. Kalynovska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Локальные стили для красивого оформления таблиц, списков и FAQ */
+        .service-hero {
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), 
+                        url('../photos.jpg/3.jpg') center/cover;
+            color: white;
+            padding-top: 80px;
+        }
+        .service-hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 20px;
+            color: white;
+        }
+        .desc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .desc-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .desc-text p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+        .advantages-list {
+            margin-top: 25px;
+        }
+        .advantages-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .advantages-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple-dark);
+            font-weight: bold;
+        }
+        
+        /* Прайс-таблицы */
+        .price-tables-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .price-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-purple);
+            padding-bottom: 10px;
+        }
+        .price-category-title:first-of-type {
+            margin-top: 0;
+        }
+        .custom-price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .custom-price-table th {
+            text-align: left;
+            padding: 15px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            border-bottom: 2px solid #eee;
+        }
+        .custom-price-table td {
+            padding: 16px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        .custom-price-table td.price-val {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--bg-soft);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+        .cta-box h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .desc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">DR. KALYNOVSKA</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle">Послуги <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laser-epilation.html">Лазерна епіляція</a></li>
+                        <li><a href="dermatology.html">Дерматологія</a></li>
+                        <li><a href="cosmetology.html">Косметологія</a></li>
+                        <li><a href="injections.html">Ін'єкційні процедури</a></li>
+                        <li><a href="botox.html">Ботулінотерапія</a></li>
+                        <li><a href="rf-lifting.html">RF-ліфтинг</a></li>
+                        <li><a href="vessel-removal.html">Видалення судин</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#reviews">Відгуки</a></li>
+                <li><a href="../index.html#contact">Контакти</a></li>
+            </ul>
+
+            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Клінічна дерматологія</h1>
+                <p>Експертна діагностика новоутворень шкіри, лікування хронічних дерматозів та акне на засадах доказової медицини. Безпечне видалення бородавок і папілом.</p>
+                <div class="hero-btns">
+                    <a href="../index.html#contact" class="btn btn-primary">Записатись на консультацію</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="desc-grid">
+                <div class="desc-text reveal">
+                    <h3>Здорова шкіра — результат правильного медичного підходу</h3>
+                    <p>Дерматологія в нашій клініці базується виключно на протоколах доказової медицини. Шкіра — це найбільший орган людини, який миттєво реагує на внутрішні збої та зовнішні чинники. Наша мета — знайти справжню причину захворювання, а не просто ліквідувати його зовнішні прояви.</p>
+                    <p>Ми проводимо високоточну цифрову діагностику родимок, терапію складних форм акне та розацеа, а також підбираємо системне лікування за індивідуальними схемами контролю.</p>
+                    
+                    <ul class="advantages-list">
+                        <li><strong>Для кого підходить:</strong> пацієнтам із підозрілими новоутвореннями, висипаннями, хронічним лущенням шкіри голови чи тіла, а також тим, хто потребує призначення системної терапії.</li>
+                        <li><strong>Сучасне обладнання:</strong> проведення дерматоскопії та трихоскопії для оцінки стану клітин під багаторазовим збільшенням.</li>
+                        <li><strong>Абсолютна безпека:</strong> делікатне радіохвильове або лазерне видалення дефектів без грубих рубців і шрамів.</li>
+                    </ul>
+                </div>
+                <div class="desc-text reveal">
+                    <img src="../photos.jpg/2.jpg" alt="Консультація лікаря-дерматолога" style="width: 100%; height: 450px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-soft);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Вартість дерматологічних послуг</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="price-tables-container reveal">
+                
+                <div class="price-category-title">Консультації та інструментальна діагностика</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Послуга</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Консультація дерматолога первинна</td>
+                            <td class="price-val">800 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Консультація дерматолога вторинна</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Дерматоскопія (дослідження родимок та утворень)</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Трихоскопія (комп'ютерна діагностика волосся та шкіри голови)</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Призначення ретиноїдів + 5 контрольних оглядів (одноразова оплата курсу)</td>
+                            <td class="price-val">3 000 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Видалення папілом / кератом / ангіом</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Кількість елементів у пакетах</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Видалення утворень від 1 до 5 шт.</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення утворень від 6 до 10 шт.</td>
+                            <td class="price-val">900 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення утворень від 11 до 20 шт.</td>
+                            <td class="price-val">1 600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення утворень від 21 до 30 шт.</td>
+                            <td class="price-val">2 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення утворень від 31 до 40 шт.</td>
+                            <td class="price-val">3 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення утворень від 41 до 50 шт.</td>
+                            <td class="price-val">4 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення утворень від 51 до 60 шт.</td>
+                            <td class="price-val">5 000 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Видалення бородавок та поодиноких інфекційних утворень</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Тип новоутворення</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Видалення кондилом (1 шт.)</td>
+                            <td class="price-val">300 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Видалення міліума (1 шт.)</td>
+                            <td class="price-val">150 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Плоскі бородавки (видалення за 1 зону)</td>
+                            <td class="price-val">700 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Проста бородавка (1 шт.)</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Прості бородавки (малі) (пакет 3 шт.)</td>
+                            <td class="price-val">600 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Підошвенні бородавки (1 шт.)</td>
+                            <td class="price-val">500 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Запитання дерматологу</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <h3>Що входить у первинну консультацію дерматолога?</h3>
+                    <p>На первинному прийомі лікар збирає детальний анамнез, проводить ретельний візуальний огляд шкірного покриву, за потреби виконує експрес-дерматоскопію утворень, встановлює попередній або заключний діагноз і розписує покроковий план лікування та домашнього догляду.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Чи потрібно здавати аналізи перед першим візитом?</h3>
+                    <p>Ні, заздалегідь здавати лабораторні аналізи не потрібно. Без огляду лікаря ви можете витратити кошти на непотрібні дослідження. Дерматолог визначить точний перелік маркерів лише після встановлення клінічної картини під час консультації.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Як доглядати за шкірою після видалення папілом чи бородавок?</h3>
+                    <p>Після процедури на місці утворення з'являється захисна кірочка. Її категорично не можна здирати або розпарювати. Протягом перших 3-5 днів ділянку обробляють спеціальним антисептичним розчином, який призначить лікар, та мінімізують прямий контакт із водою.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Довірте здоров'я своєї шкіри фахівцям</h2>
+                <p>Запишіться на цифрову дерматоскопію родимок або отримайте розгорнуту схему лікування хронічних висипань від дипломованого лікаря-дерматолога.</p>
+                <a href="../index.html#contact" class="btn btn-primary">Записатись на прийом</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">DR. KALYNOVSKA</div>
+            <p>© 2026 DR. KALYNOVSKA. ВСІ ПРАВА ЗАХИЩЕНІ.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

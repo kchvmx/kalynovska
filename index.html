@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Kalynovska | Косметологія та Дерматологія Львів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">DR. KALYNOVSKA</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="services/index.html" class="dropdown-toggle">Послуги <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services/laser-epilation.html">Лазерна епіляція</a></li>
+                        <li><a href="services/dermatology.html">Дерматологія</a></li>
+                        <li><a href="services/cosmetology.html">Косметологія</a></li>
+                        <li><a href="services/injections.html">Ін'єкційні процедури</a></li>
+                        <li><a href="services/botox.html">Ботулінотерапія</a></li>
+                        <li><a href="services/rf-lifting.html">RF-ліфтинг</a></li>
+                        <li><a href="services/vessel-removal.html">Видалення судин</a></li>
+                    </ul>
+                </li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+
+            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero" style="background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('photos.jpg/3.jpg') center/cover;">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Естетична косметологія та дерматологія</h1>
+                <p>Професійний догляд за вашою шкірою у центрі Львова. Поєднання медичних знань та сучасних технологій для вашої краси.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Записатися</a>
+                    <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="btn btn-outline">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Наші Послуги</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="services-grid">
+                <a href="services/laser-epilation.html" class="service-card reveal">
+                    <img src="photos.jpg/9.jpg" alt="Лазерна епіляція" class="service-img">
+                    <div class="service-info">
+                        <h3>Лазерна епіляція</h3>
+                        <p>Безболісне та ефективне видалення небажаного волосся на сучасному лазері останнього покоління.</p>
+                    </div>
+                </a>
+
+                <a href="services/dermatology.html" class="service-card reveal">
+                    <img src="photos.jpg/5.jpg" alt="Дерматологія" class="service-img">
+                    <div class="service-info">
+                        <h3>Дерматологія</h3>
+                        <p>Комплексний медичний підхід до лікування хвороб шкіри, висипань та професійна діагностика.</p>
+                    </div>
+                </a>
+
+                <a href="services/cosmetology.html" class="service-card reveal">
+                    <img src="photos.jpg/1.jpg" alt="Косметологія" class="service-img">
+                    <div class="service-info">
+                        <h3>Косметологія</h3>
+                        <p>Доглядові процедури, чистки та пілінги для підтримання природного здоров'я та сяяння шкіри.</p>
+                    </div>
+                </a>
+
+                <a href="services/injections.html" class="service-card reveal">
+                    <img src="photos.jpg/16.jpg" alt="Ін'єкційні процедури" class="service-img">
+                    <div class="service-info">
+                        <h3>Ін'єкційні процедури</h3>
+                        <p>Контурна пластика губ, біоревіталізація та мезотерапія для глибокого зволоження та гармонії обличчя.</p>
+                    </div>
+                </a>
+
+                <a href="services/botox.html" class="service-card reveal">
+                    <img src="photos.jpg/18.jpg" alt="Ботулінотерапія" class="service-img">
+                    <div class="service-info">
+                        <h3>Ботулінотерапія</h3>
+                        <p>Ефективне розгладження мімічних зморшок навколо очей та на лобі з ефектом природного обличчя.</p>
+                    </div>
+                </a>
+
+                <a href="services/rf-lifting.html" class="service-card reveal">
+                    <img src="photos.jpg/7.jpg" alt="RF-ліфтинг" class="service-img">
+                    <div class="service-info">
+                        <h3>RF-ліфтинг</h3>
+                        <p>Безболісна апаратна підтяжка шкіри обличчя за допомогою радіохвильового ліфтингу.</p>
+                    </div>
+                </a>
+
+                <a href="services/vessel-removal.html" class="service-card reveal">
+                    <img src="photos.jpg/6.jpg" alt="Видалення судин" class="service-img">
+                    <div class="service-info">
+                        <h3>Лазерне видалення судин</h3>
+                        <p>Безпечне та швидке усунення судинних зірочок та куперозу на обличчі та тілі.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about">
+                <div class="about-image reveal">
+                    <img src="photos.jpg/11.jpg" alt="Dr. Kalynovska">
+                </div>
+                <div class="about-text reveal">
+                    <span class="experience-badge">7 РОКІВ ДОСВІДУ</span>
+                    <h2>Ваша краса в руках професіоналів</h2>
+                    <p>Dr. Kalynovska — це простір, де медицина зустрічається з мистецтвом. Ми маємо офіційну ліцензію МОЗ України, що гарантує безпеку та високу якість кожної маніпуляції.</p>
+                    <p>Ми спеціалізуємося на дерматологічному лікуванні та преміальній естетичній косметологии. Наш підхід базується на принципах доказової медицини та використанні найкращого світового обладнання.</p>
+                    <ul>
+                        <li>• Сертифіковані лікарі</li>
+                        <li>• Ліцензія МОЗ України</li>
+                        <li>• Препарати провідних світових брендів</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Відгуки Google Maps</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Місяць тому видаляли судини на обличчі у косметолога Алли. Маю хороший результат, рекомендую 👌"</p>
+                    <h4 class="review-author">Світлана Калугіна</h4>
+                    <span class="review-date">Google відгук</span>
+                </div>
+
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Нещодавно була в косметолога Алли. Дуже задоволена результатом, робила ботокс верхню третину все сподобалось 🫶🏻 дякую)"</p>
+                    <h4 class="review-author">Нина Андрейченко</h4>
+                    <span class="review-date">Google відгук</span>
+                </div>
+
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Дуже рекомендую Валентину. Справді професійна лікар-дерматолог"</p>
+                    <h4 class="review-author">Milana Levadnaya</h4>
+                    <span class="review-date">Google відгук</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Запис на прийом</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <strong>Номер телефону:</strong><br>
+                        <a href="tel:+380969545336">+38 096 954 53 36</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Адреса клініки:</strong><br>
+                        вулиця Генерала Чупринки, 80, Львів, 79000
+                    </div>
+                    <div class="info-item">
+                        <strong>Для запису напишіть нам у соцмережі:</strong><br>
+                        <p class="contact-desc">Оберіть зручну платформу. Ми відповімо вам найближчим часом та підберемо вільне віконце.</p>
+                        <div class="cta-social-btns">
+                            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="btn btn-primary btn-insta">Instagram Direct</a>
+                            <a href="https://www.facebook.com/dr.kalynovska/?ref=NONE_xav_ig_profile_page_web#" target="_blank" class="btn btn-outline btn-fb">Facebook Messenger</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map reveal">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.575631248!2d24.004169576856!3d49.83162793132717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add70140e9d4d%3A0x6a2c27076878b668!2z0LLRg9C70LjRhtGPINCT0LXQvdC10YDQsNC70LAg0KfRg9C_0YDQuNC90LrQuCwgODAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">DR. KALYNOVSKA</div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+            <p>© 2026 DR. KALYNOVSKA. ВСІ ПРАВА ЗАХИЩЕНІ.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

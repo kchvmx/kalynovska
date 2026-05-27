@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ін'єкційна косметологія Львів | Контурна пластика та біоревіталізація — Dr. Kalynovska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Локальные стили для красивого оформления таблиц и FAQ */
+        .service-hero {
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), 
+                        url('../photos.jpg/15.jpg') center/cover;
+            color: white;
+            padding-top: 80px;
+        }
+        .service-hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 20px;
+            color: white;
+        }
+        .desc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .desc-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .desc-text p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+        .advantages-list {
+            margin-top: 25px;
+        }
+        .advantages-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .advantages-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple-dark);
+            font-weight: bold;
+        }
+        
+        /* Прайс-таблицы */
+        .price-tables-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .price-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-purple);
+            padding-bottom: 10px;
+            color: var(--text-dark);
+        }
+        .price-category-title:first-of-type {
+            margin-top: 0;
+        }
+        .custom-price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .custom-price-table th {
+            text-align: left;
+            padding: 15px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            border-bottom: 2px solid #eee;
+        }
+        .custom-price-table td {
+            padding: 16px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        .custom-price-table td.price-val {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--bg-soft);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+        .cta-box h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .desc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">DR. KALYNOVSKA</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle">Послуги <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laser-epilation.html">Лазерна епіляція</a></li>
+                        <li><a href="dermatology.html">Дерматологія</a></li>
+                        <li><a href="cosmetology.html">Косметологія</a></li>
+                        <li><a href="injections.html">Ін'єкційні процедури</a></li>
+                        <li><a href="botox.html">Ботулінотерапія</a></li>
+                        <li><a href="rf-lifting.html">RF-ліфтинг</a></li>
+                        <li><a href="vessel-removal.html">Видалення судин</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#reviews">Відгуки</a></li>
+                <li><a href="../index.html#contact">Контакти</a></li>
+            </ul>
+
+            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Ін'єкційні процедури</h1>
+                <p>Елітні методики контурної пластики, глибокої біоревіталізації та регенеративної медицини для бездоганного моделювання контурів, зволоження та ліфтингу шкіри.</p>
+                <div class="hero-btns">
+                    <a href="../index.html#contact" class="btn btn-primary">Записатися на візит</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="desc-grid">
+                <div class="desc-text reveal">
+                    <h3>Мистецтво гармонійного омолодження</h3>
+                    <p>Ін'єкційна косметологія в нашій клініці — це синергія високих медичних технологій і тонкого художнього бачення лікаря. Завдяки точковому введенню передових сертифікованих препаратів ми запускаємо потужні процеси природної регенерації, відновлюємо дефіцит об'ємів та розгладжуємо навіть глибокі заломи шкіри.</p>
+                    <p>Ми працюємо за принципом «природного результату» — підкреслюємо вашу індивідуальну красу, усуваючи ознаки вікових змін без гіперкорекції та збереженням унікальної архітектоніки вашого обличчя.</p>
+                    
+                    <ul class="advantages-list">
+                        <li><strong>Для кого підходить:</strong> пацієнтам із проявами сухості шкіри, втратою чіткості овалу обличчя, асиметрією чи недостатнім об'ємом губ, локальними жировими відкладеннями, а також для профілактики вікових змін та лікування випадіння волосся.</li>
+                        <li><strong>Світові бренди преміум-класу:</strong> ми застосовуємо лише ліцензовані препарати найвищої якості (Juvederm, Belotero, Radiesse, Rejuran, Neauvia).</li>
+                        <li><strong>Максимальний комфорт:</strong> сучасні техніки введення (зокрема із застосуванням м'яких атравматичних канюль) та сертифікована анестезія роблять сеанс практично безболісним.</li>
+                    </ul>
+                </div>
+                <div class="desc-text reveal">
+                    <img src="../photos.jpg/23.jpg" alt="Ін'єкційна косметологія" style="width: 100%; height: 450px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-soft);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Прайс-лист на ін'єкційні процедури</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="price-tables-container reveal">
+                
+                <div class="price-category-title">Мезотерапія та ліполітики</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Назва процедури / Зона</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Мезотерапія обличчя</td>
+                            <td class="price-val">2 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Мезотерапія волосся (лікування алопеції та стимуляція росту)</td>
+                            <td class="price-val">2 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Ліполітики (прямі / непрямі, 5 мл) — усунення локальних жирових відкладень</td>
+                            <td class="price-val">2 500 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Глибока біоревіталізація шкіри</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Препарат та об'єм</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Neauvia (2,5 ml)</td>
+                            <td class="price-val">4 800 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Revok50 (2 ml)</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Newest (2 ml)</td>
+                            <td class="price-val">5 800 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Plinest (2 ml)</td>
+                            <td class="price-val">5 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Rejuran I / S (1 ml) — спеціально для періорбітальної зони (очі)</td>
+                            <td class="price-val">4 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Rejuran Healer (2 ml) — потужна регенерація та сяйво</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Vitaran PDRN (1 ml)</td>
+                            <td class="price-val">4 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Vitaran PDRN (2 ml)</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Vitaran HP CELL whitening, Anti-Aging (2 ml)</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Vitaran HP CELL Tox eye/face collagen (2 ml)</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Ін'єкції полімолочної кислоти (колагеностимуляція)</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Препарат та призначення</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Javelook (періорбітальна зона навколо очей)</td>
+                            <td class="price-val">8 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Lenisna — потужний тканинний ліфтинг та неоколагенез</td>
+                            <td class="price-val">20 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Aesplla</td>
+                            <td class="price-val">17 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Petaran</td>
+                            <td class="price-val">13 000 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Контурна пластика губ та бланшинг зморшок</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Зона корекції / Препарат</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Бланшинг (корекція поверхневих заломів):</strong> Neuramis light (1 ml)</td>
+                            <td class="price-val">5 300 грн</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Бланшинг (корекція поверхневих заломів):</strong> Belotero soft (1 ml)</td>
+                            <td class="price-val">7 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Контурна пластика губ: Neuramis lidocaine (1 ml)</td>
+                            <td class="price-val">6 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Контурна пластика губ: Aliaxine LV (1 ml)</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Контурна пластика губ: Juvederm ultra smile (0,5 ml)</td>
+                            <td class="price-val">6 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Контурна пластика губ: Belotero lips Contour, Shape (0,6 ml)</td>
+                            <td class="price-val">7 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Контурна пластика губ: Aileene Vol 2 (1 ml)</td>
+                            <td class="price-val">6 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Гіалуронідаза (ферментативне розчинення та виведення старого філера)</td>
+                            <td class="price-val">2 500 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Векторний ліфтинг та моделювання об'ємів обличчя</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Зони: Вилиці, скроні, підборіддя, кути нижньої щелепи</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Векторний ліфтинг:</strong> Radiesse (1,5 ml) — преміальний гідроксіапатит кальцію</td>
+                            <td class="price-val">11 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Векторний ліфтинг:</strong> Facetem (1,5 ml)</td>
+                            <td class="price-val">10 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Об'ємне моделювання: Aliaxine EV (1 ml)</td>
+                            <td class="price-val">7 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Об'ємне моделювання: Aileene Vol 3 (1 ml)</td>
+                            <td class="price-val">6 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Об'ємне моделювання: Juvederm Voluma / Volux (1 ml)</td>
+                            <td class="price-val">8 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Використання медичної атравматичної канюлі (додатково до процедури)</td>
+                            <td class="price-val">400 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Часті запитання (FAQ)</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <h3>Як довго тримається ефект після контурної пластики та ліфтингу?</h3>
+                    <p>Тривалість результату залежить від щільності обраного філера та вашого індивідуального метаболізму. Препарати на основі гіалуронової кислоти в зоні губ тримаються від 8 до 14 місяців, у зоні вилиць та підборіддя — до 12-18 місяців. Ефект колагеностимуляції Radiesse та полімолочної кислоти наростає протягом кількох місяців і зберігається до 1,5–2 років.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Який період реабілітації після ін'єкцій?</h3>
+                    <p>Сучасні ін'єкції є малоатравматичними. У перші 2-4 дні після сеансу в зонах введення можливий незначний набряк, почервоніння та дрібні гематоми (синці) у точках проколів, що вважається абсолютною фізіологічною нормою. Набряклість після корекції губ повністю зникає протягом тижня.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Яких рекомендацій потрібно дотримуватися після процедури?</h3>
+                    <p>Протягом перших 24 годин не слід наносити декоративну косметику та чіпати обличчя брудними руками. На 3-5 днів рекомендується виключити інтенсивні фізичні навантаження, алкоголь та гарячі напої (після губ). На 2 тижні суворо заборонено відвідувати лазні, сауни, солярії та приймати гарячу ванну.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Бажаєте підкреслити свою витонченість та молодість?</h2>
+                <p>Запишіться на індивідуальну консультацію лікаря-косметолога. Ми підберемо оптимальну сертифіковану методику омолодження, враховуючи анатомічні особливості вашого обличчя.</p>
+                <a href="../index.html#contact" class="btn btn-primary">Записатись на консультацію</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">DR. KALYNOVSKA</div>
+            <p>© 2026 DR. KALYNOVSKA. ВСІ ПРАВА ЗАХИЩЕНІ.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ботулінотерапія Львів | Корекція зморшок — Dr. Kalynovska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Локальные стили для красивого оформления таблиц и FAQ */
+        .service-hero {
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                        url('../photos.jpg/3.jpg') center/cover;
+            color: white;
+            padding-top: 80px;
+        }
+        .service-hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 20px;
+            color: white;
+        }
+        .desc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .desc-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .desc-text p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+        .advantages-list {
+            margin-top: 25px;
+        }
+        .advantages-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .advantages-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple-dark);
+            font-weight: bold;
+        }
+        
+        /* Таблицы цен */
+        .price-tables-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .price-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-purple);
+            padding-bottom: 10px;
+        }
+        .price-category-title:first-of-type {
+            margin-top: 0;
+        }
+        .custom-price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .custom-price-table th {
+            text-align: left;
+            padding: 15px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            border-bottom: 2px solid #eee;
+        }
+        .custom-price-table td {
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        .custom-price-table td.price-val {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--bg-soft);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+        .cta-box h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .desc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">DR. KALYNOVSKA</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle">Послуги <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laser-epilation.html">Лазерна епіляція</a></li>
+                        <li><a href="dermatology.html">Дерматологія</a></li>
+                        <li><a href="cosmetology.html">Косметологія</a></li>
+                        <li><a href="injections.html">Ін'єкційні процедури</a></li>
+                        <li><a href="botox.html">Ботулінотерапія</a></li>
+                        <li><a href="rf-lifting.html">RF-ліфтинг</a></li>
+                        <li><a href="vessel-removal.html">Видалення судин</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#reviews">Відгуки</a></li>
+                <li><a href="../index.html#contact">Контакти</a></li>
+            </ul>
+
+            <a href="https://www.instagram.com/dr.kalynovska_/" target="_blank" class="instagram-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Ботулінотерапія</h1>
+                <p>Ефективне та безпечне розгладження мімічних зморшок навколо очей, на лобі та міжбрів'ї зі збереженням природної, живої міміки обличчя.</p>
+                <div class="hero-btns">
+                    <a href="../index.html#contact" class="btn btn-primary">Записатися</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="desc-grid">
+                <div class="desc-text reveal">
+                    <h3>Процедура молодості та свіжості вашої шкіри</h3>
+                    <p>Ботулінотерапія — це сучасна ін'єкційна методика, яка дозволяє тимчасово розслабити м'язи обличчя, відповідальні за утворення мімічних заломів. Завдяки цьому шкіра повністю розгладжується, а обличчя набуває відпочилого та свіжого вигляду.</p>
+                    <p>У нашій клініці ми використовуємо виключно преміальні сертифіковані препарати світового рівня, що гарантує абсолютну безпеку медичного процесу та прогнозований природний результат.</p>
+                    
+                    <ul class="advantages-list">
+                        <li><strong>Миттєвий результат:</strong> перші зміни помітні вже на 3-4 день після процедури.</li>
+                        <li><strong>Безболісно:</strong> використання надтонких голок робить ін'єкції комфортними.</li>
+                        <li><strong>Ефект "Живого обличчя":</strong> індивідуальне дозування виключає ефект маски.</li>
+                    </ul>
+                </div>
+                <div class="desc-text reveal">
+                    <img src="../photos.jpg/22.jpg" alt="Процедура ботулінотерапії" style="width: 100%; height: 450px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-soft);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Вартість процедур</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="price-tables-container reveal">
+                
+                <div class="price-category-title">Препарат Нейронокс</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Зона ін'єкції</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Верхня третина обличчя (Очі, лоб, міжбрів'я)</td>
+                            <td class="price-val">7 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Міжбрів'я</td>
+                            <td class="price-val">3 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Лоб + міжбрів'я</td>
+                            <td class="price-val">5 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Очі ("гусині лапки")</td>
+                            <td class="price-val">3 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Підборіддя</td>
+                            <td class="price-val">2 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Перенісся</td>
+                            <td class="price-val">1 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Крила носа</td>
+                            <td class="price-val">1 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Підняття кінчика носа</td>
+                            <td class="price-val">900 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Гінгівальна посмішка</td>
+                            <td class="price-val">2 300 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Виворіт губи (Lip Flip)</td>
+                            <td class="price-val">1 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Бруксизм (жувальні м'язи)</td>
+                            <td class="price-val">6 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Лікування гіпергідрозу (підвищена пітливість)</td>
+                            <td class="price-val">8 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>1 одиниця препарату</td>
+                            <td class="price-val">150 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Докорекція (за потреби через 14 днів)</td>
+                            <td class="price-val" style="color: green; font-weight: 500;">Безкоштовно</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Препарат BOTOX ALLERGAN (США)</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Зона ін'єкції</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Верхня третина обличчя (Очі, лоб, міжбрів'я)</td>
+                            <td class="price-val">7 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Лоб + міжбрів'я</td>
+                            <td class="price-val">6 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Міжбрів'я</td>
+                            <td class="price-val">3 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Очі</td>
+                            <td class="price-val">3 000 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price-category-title">Препарат REFINEX</div>
+                <table class="custom-price-table">
+                    <thead>
+                        <tr>
+                            <th>Зона ін'єкції</th>
+                            <th style="text-align: right;">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Верхня третина обличчя (Очі, лоб, міжбрів'я, ніс)</td>
+                            <td class="price-val">5 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Лоб + міжбрів'я</td>
+                            <td class="price-val">4 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Міжбрів'я</td>
+                            <td class="price-val">2 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Очі</td>
+                            <td class="price-val">2 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Лікування гіпергідрозу</td>
+                            <td class="price-val">7 500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Full Face (Комплексне омолодження обличчя)</td>
+                            <td class="price-val">10 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Докорекція</td>
+                            <td class="price-val" style="color: green; font-weight: 500;">Безкоштовно</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Часті запитання (FAQ)</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <h3>Чи боляче робити процедуру?</h3>
+                    <p>Ін'єкції проводяться за допомогою спеціальних медичних мікроголок, які є значно тоншими за стандартні. Пацієнт відчуває лише незначні уколи, схожі на комарині. За потреби на зону може бути нанесений крем-анестетик.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Коли з'явиться остаточний ефект і скільки він тримається?</h3>
+                    <p>Препарат починає діяти на 3-5 день, а повний остаточний ефект формується через 14 днів після процедури (саме тоді проводиться безкоштовний контрольний огляд). Результат зберігається від 4 до 6 місяців, залежно від індивідуального метаболізму організму пацієнта.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Які основні протипоказання?</h3>
+                    <p>Основними протипоказаннями є вагітність, період лактації, гострі інфекційні захворювання (включаючи герпес у стадії загострення), порушення згортання крові, онкологія та запальні процеси у місцях запланованих ін'єкцій.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Бажаєте зберегти молодість шкіри?</h2>
+                <p>Запишіться на первинну консультацію дерматокосметолога. Ми підберемо індивідуальне дозування та препарат, що підійде саме вашому типу обличчя.</p>
+                <a href="../index.html#contact" class="btn btn-primary">Записатись на консультацію</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">DR. KALYNOVSKA</div>
+            <p>© 2026 DR. KALYNOVSKA. ВСІ ПРАВА ЗАХИЩЕНІ.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
